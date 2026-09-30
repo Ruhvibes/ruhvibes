@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruhvibes v1 — Lofi • Mashup • Vibes | Early Access</title>
+<meta name="description" content="Ruhvibes v1 — a lofi & mashup remix studio for Android. Smart Auto Remix, Synth Piano, Drum Pads, 8D Audio. Made by Hasnain.">
+<link rel="icon" href="logo.png">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root { --purple:#a06bff; --pink:#ff4d8d; --cyan:#22d3ee; --bg:#0a0614; }
+  html { scroll-behavior:smooth; }
+  body {
+    font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;
+    background: radial-gradient(ellipse 90% 45% at 50% 0%, #2a1247 0%, var(--bg) 60%) fixed, var(--bg);
+    color:#f2ecff; min-height:100vh; overflow-x:hidden;
+  }
+  .stars { position:fixed; inset:0; pointer-events:none; opacity:.45; z-index:0;
+    background-image: radial-gradient(2px 2px at 12% 18%, #fff, transparent),
+                      radial-gradient(2px 2px at 85% 12%, #fff, transparent),
+                      radial-gradient(2px 2px at 70% 40%, #c9a7ff, transparent),
+                      radial-gradient(2px 2px at 25% 65%, #fff, transparent),
+                      radial-gradient(2px 2px at 90% 75%, #fff, transparent);
+  }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 24px; position:relative; z-index:1; }
+  nav { display:flex; align-items:center; justify-content:space-between; padding:22px 0; }
+  .brand { display:flex; align-items:center; gap:12px; font-weight:900; font-size:22px; letter-spacing:3px; }
+  .brand img { width:44px; height:44px; border-radius:50%; border:2px solid var(--purple); box-shadow:0 0 18px var(--purple); }
+  .btn { display:inline-block; text-decoration:none; color:#fff; font-weight:800;
+    background:linear-gradient(90deg,#7b3ff2,var(--purple)); padding:14px 34px; border-radius:40px;
+    box-shadow:0 0 28px rgba(123,63,242,.55); transition:transform .15s; border:none; cursor:pointer; font-size:17px; }
+  .btn:hover { transform:translateY(-2px); }
+  .btn.big { font-size:22px; padding:20px 56px; }
+  .hero { text-align:center; padding:70px 0 40px; }
+  .hero img.logo { width:190px; height:190px; border-radius:50%; border:5px solid var(--purple);
+    box-shadow:0 0 60px var(--purple), 0 0 120px #6a2fd6; object-fit:cover; }
+  .pill { display:inline-block; margin-top:26px; background:linear-gradient(90deg,#ff4d6d,#ff9e4d);
+    padding:10px 30px; border-radius:30px; font-weight:800; letter-spacing:3px; font-size:15px; }
+  h1 { font-size:clamp(52px,9vw,110px); font-weight:900; letter-spacing:10px; margin-top:18px;
+    text-shadow:0 0 36px var(--purple); }
+  .tagline { color:#d9c6ff; font-size:clamp(18px,3vw,26px); letter-spacing:4px; margin-top:8px; }
+  .ver { color:#9b8ac7; margin-top:14px; font-size:15px; }
+  .cta-row { margin-top:34px; display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+  .ghost { background:transparent; border:2px solid var(--purple); box-shadow:none; }
+  section { padding:64px 0; }
+  h2 { text-align:center; font-size:clamp(30px,5vw,44px); letter-spacing:4px; margin-bottom:12px; }
+  .sub { text-align:center; color:#b9a3e8; margin-bottom:44px; font-size:18px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:20px; }
+  .card { background:rgba(160,107,255,.08); border:1px solid rgba(160,107,255,.35); border-radius:20px;
+    padding:28px 22px; text-align:center; transition:transform .15s; }
+  .card:hover { transform:translateY(-4px); border-color:var(--purple); }
+  .card .ico { font-size:44px; }
+  .card h3 { margin:14px 0 8px; font-size:20px; }
+  .card p { color:#c4b3ea; font-size:15px; line-height:1.55; }
+  .shots { display:flex; gap:28px; justify-content:center; flex-wrap:wrap; }
+  .phone { width:270px; border-radius:34px; border:3px solid #3a2a5e; overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.6), 0 0 40px rgba(160,107,255,.25); background:#000; }
+  .phone img { width:100%; display:block; }
+  .phone .cap { text-align:center; padding:12px; font-size:14px; color:#b9a3e8; background:#120b24; }
+  .steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; counter-reset:step; }
+  .step { background:rgba(160,107,255,.08); border:1px solid rgba(160,107,255,.35); border-radius:20px; padding:26px 22px; }
+  .step .n { font-size:15px; font-weight:800; color:var(--purple); letter-spacing:2px; }
+  .step h3 { margin:10px 0 8px; font-size:19px; }
+  .step p { color:#c4b3ea; font-size:15px; line-height:1.6; }
+  .socials { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+  .soc { display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;
+    background:rgba(160,107,255,.1); border:1px solid rgba(160,107,255,.4); border-radius:40px;
+    padding:13px 26px; font-weight:700; transition:transform .15s; }
+  .soc:hover { transform:translateY(-2px); border-color:var(--purple); }
+  footer { text-align:center; padding:44px 0 54px; color:#9b8ac7; font-size:15px; }
+  footer .made { font-size:19px; color:#d9c6ff; margin-bottom:6px; }
+  @media (max-width:560px){ .cta-row .btn.big{width:100%;} h1{letter-spacing:5px;} }
+</style>
+</head>
+<body>
+<div class="stars"></div>
+
+<div class="wrap">
+  <nav>
+    <div class="brand"><img src="logo.png" alt="Ruhvibes logo">RUHVIBES</div>
+    <a class="btn" href="Ruhvibes-v1.apk" download>⬇ Download</a>
+  </nav>
+
+  <div class="hero">
+    <img class="logo" src="logo.png" alt="Ruhvibes">
+    <div><span class="pill">🚀 EARLY ACCESS</span></div>
+    <h1>RUHVIBES</h1>
+    <div class="tagline">LOFI • MASHUP • VIBES</div>
+    <div class="ver">v1 &nbsp;•&nbsp; Android &nbsp;•&nbsp; ~3.2 MB</div>
+    <div class="cta-row">
+      <a class="btn big" href="Ruhvibes-v1.apk" download>⬇ Download APK</a>
+    </div>
+    <div class="ver" style="margin-top:16px">Free • No sign-up • Works offline</div>
+  </div>
+
+  <section id="features">
+    <h2>FEATURES</h2>
+    <div class="sub">A pocket remix studio — smart, fast and fun.</div>
+    <div class="grid">
+      <div class="card"><div class="ico">🎛️</div><h3>Smart Auto Remix</h3><p>One tap — BPM detect, tempo match and a full FX chain on any song.</p></div>
+      <div class="card"><div class="ico">✨</div><h3>AI Song Studio</h3><p>Describe a vibe — the on-device smart composer writes an original song for you.</p></div>
+      <div class="card"><div class="ico">🎹</div><h3>Synth Piano</h3><p>Playable piano with studio-quality tone, ready to record.</p></div>
+      <div class="card"><div class="ico">🥁</div><h3>Drum Pads</h3><p>Finger-drumming pads with punchy, pro sounds.</p></div>
+      <div class="card"><div class="ico">🎧</div><h3>8D Audio</h3><p>Immersive rotating 3D sound — best with headphones.</p></div>
+      <div class="card"><div class="ico">🎚️</div><h3>Remix Presets</h3><p>Slowed + Reverb, Nightcore, Vaporwave, Chipmunk, Deep Voice &amp; more.</p></div>
+      <div class="card"><div class="ico">🎼</div><h3>16-Step Sequencer</h3><p>Build your own beats, bar by bar.</p></div>
+      <div class="card"><div class="ico">💾</div><h3>WAV Export</h3><p>Export your remix straight to your Music folder.</p></div>
+    </div>
+  </section>
+
+  <section id="shots">
+    <h2>INSIDE THE APP</h2>
+    <div class="sub">Real screenshots from Ruhvibes v1.</div>
+    <div class="shots">
+      <div class="phone"><img src="shots/app-remix.png" alt="Remix tab"><div class="cap">🎛️ Remix Tab</div></div>
+      <div class="phone"><img src="shots/app-studio.png" alt="Studio tab"><div class="cap">✨ AI Song Studio</div></div>
+    </div>
+  </section>
+
+  <section id="install">
+    <h2>HOW TO INSTALL</h2>
+    <div class="sub">30 seconds — no Play Store needed.</div>
+    <div class="steps">
+      <div class="step"><div class="n">STEP 1</div><h3>Download the APK</h3><p>Tap the Download button above and wait for the 3.2 MB file to finish.</p></div>
+      <div class="step"><div class="n">STEP 2</div><h3>Allow install</h3><p>Open the file — Android will ask to allow installs from your browser. Tap Allow.</p></div>
+      <div class="step"><div class="n">STEP 3</div><h3>Open Ruhvibes</h3><p>Tap Install, then open the app and hit “Try Demo Track”. Done! 🎶</p></div>
+    </div>
+  </section>
+
+  <section id="follow">
+    <h2>FOLLOW THE JOURNEY</h2>
+    <div class="sub">New drops, updates and behind-the-scenes.</div>
+    <div class="socials">
+      <a class="soc" href="https://www.instagram.com/ruhvibes1" target="_blank" rel="noopener">📸 @ruhvibes1</a>
+      <a class="soc" href="https://www.instagram.com/hasnain6s" target="_blank" rel="noopener">📸 @hasnain6s</a>
+      <a class="soc" href="https://www.instagram.com/hassy_khan6s" target="_blank" rel="noopener">📸 @hassy_khan6s</a>
+      <a class="soc" href="https://www.facebook.com/share/1F4JLnKBGz/" target="_blank" rel="noopener">📘 Facebook</a>
+      <a class="soc" href="https://youtube.com/@ruhvibes1" target="_blank" rel="noopener">▶️ YouTube</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="made">Made by Hasnain ❤️</div>
+    <div>Ruhvibes v1 • Early Access • © 2026</div>
+  </footer>
+</div>
+</body>
+</html>
