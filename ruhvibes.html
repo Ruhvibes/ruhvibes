@@ -98,7 +98,7 @@ footer{text-align:center;padding:28px 16px;color:var(--mut);font-size:13px;borde
     <div class="nav-links" id="navlinks">
       <a href="#services">Services</a>
       <a href="#portals">Online Portals</a>
-      <a href="#utils">Utilities</a>
+      
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -153,71 +153,6 @@ footer{text-align:center;padding:28px 16px;color:var(--mut);font-size:13px;borde
   </div>
 </section>
 
-<!-- UTILITIES -->
-<section id="utils">
-  <div class="sec-title"><span class="sq"></span>💼 Business &amp; Finance Utilities</div>
-  <p class="sec-sub">दुकान के हिसाब-किताब के काम के tools</p>
-
-  <div class="calc">
-    <h3>📈 Profit Margin Calculator</h3>
-    <label>Total Cost Price (₹)</label>
-    <input type="number" id="pm-cost" placeholder="जैसे 800" min="0">
-    <label>Selling Price (₹)</label>
-    <input type="number" id="pm-sell" placeholder="जैसे 1000" min="0">
-    <button class="go" id="pm-go">Calculate Margin</button>
-    <div class="out" id="pm-out">
-      <div class="row"><span class="k">Profit (₹)</span><span class="v" id="pm-profit">—</span></div>
-      <div class="row"><span class="k">Margin %</span><span class="v" id="pm-pct">—</span></div>
-    </div>
-  </div>
-
-  <div class="calc">
-    <h3>🏦 EMI Calculator</h3>
-    <label>Loan Amount (₹)</label>
-    <input type="number" id="emi-p" placeholder="जैसे 100000" min="0">
-    <label>Interest Rate (% प्रति वर्ष)</label>
-    <input type="number" id="emi-r" placeholder="जैसे 12" min="0" step="0.01">
-    <label>Months (महीने)</label>
-    <input type="number" id="emi-n" placeholder="जैसे 24" min="1">
-    <button class="go" id="emi-go">Calculate EMI</button>
-    <div class="out" id="emi-out">
-      <div class="row"><span class="k">Monthly EMI (₹)</span><span class="v" id="emi-m">—</span></div>
-      <div class="row"><span class="k">Total Interest (₹)</span><span class="v" id="emi-i">—</span></div>
-      <div class="row"><span class="k">Total Payable (₹)</span><span class="v" id="emi-t">—</span></div>
-    </div>
-  </div>
-
-  <div class="calc">
-    <h3>🚗 Auto / Vehicle Loan EMI</h3>
-    <label>Vehicle Price (₹)</label>
-    <input type="number" id="v-p" placeholder="जैसे 500000" min="0">
-    <label>Down Payment (₹)</label>
-    <input type="number" id="v-d" placeholder="जैसे 100000" min="0">
-    <label>Interest Rate (% प्रति वर्ष)</label>
-    <input type="number" id="v-r" placeholder="जैसे 9" min="0" step="0.01">
-    <label>Months (महीने)</label>
-    <input type="number" id="v-n" placeholder="जैसे 48" min="1">
-    <button class="go" id="v-go">Calculate Vehicle EMI</button>
-    <div class="out" id="v-out">
-      <div class="row"><span class="k">Loan Amount (₹)</span><span class="v" id="v-loan">—</span></div>
-      <div class="row"><span class="k">Monthly EMI (₹)</span><span class="v" id="v-m">—</span></div>
-      <div class="row"><span class="k">Total Interest (₹)</span><span class="v" id="v-i">—</span></div>
-    </div>
-  </div>
-
-  <div class="calc">
-    <h3>🏷️ Discount Calculator</h3>
-    <label>MRP (₹)</label>
-    <input type="number" id="dc-mrp" placeholder="जैसे 999" min="0">
-    <label>Discount (%)</label>
-    <input type="number" id="dc-pct" placeholder="जैसे 20" min="0" max="100" step="0.01">
-    <button class="go" id="dc-go">Calculate Price</button>
-    <div class="out" id="dc-out">
-      <div class="row"><span class="k">Discount (₹)</span><span class="v" id="dc-d">—</span></div>
-      <div class="row"><span class="k">Final Price (₹)</span><span class="v" id="dc-f">—</span></div>
-    </div>
-  </div>
-</section>
 
 <!-- CONTACT -->
 <section id="contact">
