@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Apps — Download All Apps by Hasnain</title>
+<meta name="description" content="Download all apps by Hasnain — RuhRank exam prep, RuhMix music studio, RuhStudy Bihar Board prep, RuhTools utilities. Free for Android.">
+<link rel="icon" href="logo.png">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root { --purple:#a06bff; --pink:#ff4d8d; --cyan:#22d3ee; --bg:#0a0614; }
+  html { scroll-behavior:smooth; }
+  body {
+    font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;
+    background: radial-gradient(ellipse 90% 45% at 50% 0%, #2a1247 0%, var(--bg) 60%) fixed, var(--bg);
+    color:#f2ecff; min-height:100vh; overflow-x:hidden;
+  }
+  .stars { position:fixed; inset:0; pointer-events:none; opacity:.45; z-index:0;
+    background-image: radial-gradient(2px 2px at 12% 18%, #fff, transparent),
+                      radial-gradient(2px 2px at 85% 12%, #fff, transparent),
+                      radial-gradient(2px 2px at 70% 40%, #c9a7ff, transparent),
+                      radial-gradient(2px 2px at 25% 65%, #fff, transparent),
+                      radial-gradient(2px 2px at 90% 75%, #fff, transparent);
+  }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 24px; position:relative; z-index:1; }
+  nav { display:flex; align-items:center; justify-content:space-between; padding:22px 0; }
+  .brand { display:flex; align-items:center; gap:12px; font-weight:900; font-size:22px; letter-spacing:3px; text-decoration:none; color:#fff; }
+  .brand img { width:44px; height:44px; border-radius:50%; border:2px solid var(--purple); box-shadow:0 0 18px var(--purple); }
+  .navlinks { display:flex; gap:10px; align-items:center; }
+  .navlink { color:#d9c6ff; text-decoration:none; font-weight:700; padding:10px 20px; border-radius:30px; border:1px solid rgba(160,107,255,.4); font-size:15px; }
+  .navlink:hover, .navlink.active { border-color:var(--purple); color:#fff; background:rgba(160,107,255,.12); }
+  .hero { text-align:center; padding:56px 0 30px; }
+  .pill { display:inline-block; background:linear-gradient(90deg,#ff4d6d,#ff9e4d);
+    padding:10px 30px; border-radius:30px; font-weight:800; letter-spacing:3px; font-size:15px; }
+  h1 { font-size:clamp(40px,7vw,72px); font-weight:900; letter-spacing:6px; margin-top:18px;
+    text-shadow:0 0 36px var(--purple); }
+  .tagline { color:#d9c6ff; font-size:clamp(16px,2.5vw,21px); margin-top:10px; }
+  .apps { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:24px; padding:40px 0 20px; }
+  .app { background:rgba(160,107,255,.08); border:1px solid rgba(160,107,255,.35); border-radius:24px;
+    padding:34px 28px; text-align:center; transition:transform .15s; display:flex; flex-direction:column; }
+  .app:hover { transform:translateY(-5px); border-color:var(--purple); box-shadow:0 12px 44px rgba(160,107,255,.25); }
+  .app .ico { font-size:58px; }
+  .app h2 { margin:16px 0 6px; font-size:28px; letter-spacing:2px; }
+  .app .tag { color:var(--cyan); font-weight:700; font-size:15px; letter-spacing:1px; }
+  .app p { color:#c4b3ea; font-size:15px; line-height:1.6; margin:14px 0 18px; flex:1; }
+  .app .meta { color:#9b8ac7; font-size:14px; margin-bottom:20px; }
+  .btn { display:inline-block; text-decoration:none; color:#fff; font-weight:800;
+    background:linear-gradient(90deg,#7b3ff2,var(--purple)); padding:14px 34px; border-radius:40px;
+    box-shadow:0 0 28px rgba(123,63,242,.55); transition:transform .15s; border:none; cursor:pointer; font-size:17px; }
+  .btn:hover { transform:translateY(-2px); }
+  .note { text-align:center; color:#9b8ac7; font-size:15px; padding:10px 0 30px; line-height:1.7; }
+  .socials { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; padding-bottom:20px; }
+  .soc { display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;
+    background:rgba(160,107,255,.1); border:1px solid rgba(160,107,255,.4); border-radius:40px;
+    padding:13px 26px; font-weight:700; transition:transform .15s; }
+  .soc:hover { transform:translateY(-2px); border-color:var(--purple); }
+  footer { text-align:center; padding:30px 0 54px; color:#9b8ac7; font-size:15px; }
+  footer .made { font-size:19px; color:#d9c6ff; margin-bottom:6px; }
+</style>
+</head>
+<body>
+<div class="stars"></div>
+
+<div class="wrap">
+  <nav>
+    <a class="brand" href="index.html"><img src="logo.png" alt="logo">RUHVIBES</a>
+    <div class="navlinks">
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink active" href="apps.html">All Apps</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div><span class="pill">📱 MY APPS</span></div>
+    <h1>ALL APPS</h1>
+    <div class="tagline">Every app I've built — free, no sign-up, direct download.</div>
+  </div>
+
+  <div class="apps">
+    <div class="app">
+      <div class="ico">📚</div>
+      <h2>RuhRank</h2>
+      <div class="tag">EXAM PREP</div>
+      <p>Competitive exam preparation — SSC, Railway, Banking, Bihar Police, BPSC, Defence &amp; more. 8,300+ questions, mock tests, daily challenge, leaderboard.</p>
+      <div class="meta">v1.0 &nbsp;•&nbsp; Android &nbsp;•&nbsp; ~10 MB</div>
+      <a class="btn" href="https://github.com/Ruhvibes/ruhrank/releases/download/v1/RuhRank.apk">⬇ Download</a>
+    </div>
+
+    <div class="app">
+      <div class="ico">🎧</div>
+      <h2>RuhMix</h2>
+      <div class="tag">MUSIC STUDIO</div>
+      <p>A professional music &amp; remix studio in your pocket — Auto Remix, vocal separation, 5-track mixer, MP3 export and 8D audio.</p>
+      <div class="meta">v1.0 &nbsp;•&nbsp; Android &nbsp;•&nbsp; ~3.5 MB</div>
+      <a class="btn" href="https://github.com/Ruhvibes/ruhmix/releases/download/v1/RuhMix.apk">⬇ Download</a>
+    </div>
+
+    <div class="app">
+      <div class="ico">📖</div>
+      <h2>RuhStudy</h2>
+      <div class="tag">BIHAR BOARD</div>
+      <p>Complete Bihar Board Class 10, 11 &amp; 12 exam prep — all subjects, Hindi + English medium, chapter notes, quizzes and mock tests. 100% free.</p>
+      <div class="meta">v1.0 &nbsp;•&nbsp; Android &nbsp;•&nbsp; ~115 MB</div>
+      <a class="btn" href="https://github.com/Ruhvibes/ruhstudy/releases/download/v1/RuhStudy.apk">⬇ Download</a>
+    </div>
+
+    <div class="app">
+      <div class="ico">🛠️</div>
+      <h2>RuhTools</h2>
+      <div class="tag">UTILITIES</div>
+      <p>44 all-in-one student tools — PDF merge &amp; split, ID photo maker, image tools, calculators, QR, notes, stopwatch and much more.</p>
+      <div class="meta">v1.0 &nbsp;•&nbsp; Android &nbsp;•&nbsp; ~8 MB</div>
+      <a class="btn" href="https://github.com/Ruhvibes/ruhtools/releases/download/v1/RuhTools.apk">⬇ Download</a>
+    </div>
+  </div>
+
+  <div class="note">
+    Tap a download button, open the file, allow installs from your browser,<br>
+    then tap Install. 30 seconds — no Play Store needed.
+  </div>
+
+  <div class="socials">
+    <a class="soc" href="https://www.instagram.com/ruhvibes1" target="_blank" rel="noopener">📸 @ruhvibes1</a>
+    <a class="soc" href="https://youtube.com/@ruhvibes1" target="_blank" rel="noopener">▶️ YouTube</a>
+  </div>
+
+  <footer>
+    <div class="made">Made by Hasnain ❤️</div>
+    <div>© 2026</div>
+  </footer>
+</div>
+</body>
+</html>
