@@ -5,7 +5,7 @@
 <meta charset='UTF-8'/>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
 <title>Ruhvibes - Free Android Apps</title>
-<meta content='Download free Ruhvibes Android apps - RuhRank, RuhMix, RuhStudy, RuhTools, RuhLife' name='description'/>
+<meta content='Download free Ruhvibes Android apps - RuhRank, RuhMix, RuhStudy, RuhTools, RuhLife, RuhGenesis' name='description'/>
 <b:include data='blog' name='all-head-content'/>
 <b:skin><![CDATA[
 :root{--bg:#0a0e14;--card:#11161f;--line:#1e2a3a;--txt:#e6edf3;--dim:#8b98a9;--acc:#00e676;--acc2:#00b0ff;--warn:#ffb300}
@@ -70,9 +70,9 @@ footer .h{color:#ff5c7a}
 <h1>My Apps.<br/><span class="g">Download Now.</span></h1>
 <p>Study, music, exam preparation and daily tools — everything completely free. No login, no charges.</p>
 <div class="stats">
-<div class="stat"><b>5</b><span>Apps</span></div>
+<div class="stat"><b>6</b><span>Apps</span></div>
 <div class="stat"><b>100%</b><span>Free</span></div>
-<div class="stat"><b>~47MB</b><span>Total Size</span></div>
+<div class="stat"><b>~52MB</b><span>Total Size</span></div>
 </div>
 </div>
 
@@ -126,6 +126,13 @@ footer .h{color:#ff5c7a}
 <ul><li>Build your own 3D nature world</li><li>7 plants + 7 animal species</li><li>Weather, day/night, Hindi + English</li></ul>
 <div class="meta"><span>v1.0</span><span>~5 MB</span></div>
 <a class="dl" href="https://github.com/Ruhvibes/ruhlife/releases/download/v1/RuhLife.apk">⬇ Download APK</a>
+</div>
+
+<div class="app">
+<div class="ic">🌌</div><h3>RuhGenesis</h3><div class="tag2">the living universe</div>
+<ul><li>Create your own 3D universe</li><li>Evolve life &amp; civilizations</li><li>Timeline explorer, Hindi + English</li></ul>
+<div class="meta"><span>v1.0</span><span>~5 MB</span></div>
+<a class="dl" href="https://github.com/Ruhvibes/ruhgenesis/releases/download/v1/RuhGenesis.apk">⬇ Download APK</a>
 </div>
 
 </div>
