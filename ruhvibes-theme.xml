@@ -5,9 +5,10 @@
 <meta charset='UTF-8'/>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
 <title>Ruhvibes - Free Android Apps</title>
-<meta content='Download free Ruhvibes Android apps - RuhRank, RuhMix, RuhStudy, RuhTools, RuhLife, RuhGenesis, RuhXam' name='description'/>
+<meta content='Download free Ruhvibes Android apps — RuhRank, RuhMix, RuhStudy, RuhTools, RuhLife, RuhGenesis, RuhXam, BiharDarshan' name='description'/>
 <b:include data='blog' name='all-head-content'/>
 <b:skin><![CDATA[
+
 :root{--bg:#0a0e14;--card:#11161f;--line:#1e2a3a;--txt:#e6edf3;--dim:#8b98a9;--acc:#00e676;--acc2:#00b0ff;--warn:#ffb300}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
@@ -55,10 +56,12 @@ body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,sans
 footer{text-align:center;color:var(--dim);font-size:13px;margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-family:monospace}
 footer .h{color:#ff5c7a}
 @media(max-width:560px){.nav{display:none}}
+
 ]]></b:skin>
 </head>
 <body>
 <div class="term">
+
 
 <div class="topbar">
 <div class="logo">&gt;_ RUH<span>VIBES</span></div>
@@ -70,9 +73,9 @@ footer .h{color:#ff5c7a}
 <h1>My Apps.<br/><span class="g">Download Now.</span></h1>
 <p>Study, music, exam preparation and daily tools — everything completely free. No login, no charges.</p>
 <div class="stats">
-<div class="stat"><b>7</b><span>Apps</span></div>
+<div class="stat"><b>8</b><span>Apps</span></div>
 <div class="stat"><b>100%</b><span>Free</span></div>
-<div class="stat"><b>~61MB</b><span>Total Size</span></div>
+<div class="stat"><b>~129MB</b><span>Total Size</span></div>
 </div>
 </div>
 
@@ -99,8 +102,8 @@ footer .h{color:#ff5c7a}
 
 <div class="app">
 <div class="ic">🚂</div><h3>RuhXam</h3><div class="tag2">rrb ntpc &amp; group d</div>
-<ul><li>53 chapters, 265 MCQs with tricks</li><li>Mock test, notes + PDF library</li><li>Current affairs, Hindi + English</li></ul>
-<div class="meta"><span>v1.0</span><span>~9 MB</span></div>
+<ul><li>53 chapters, 1,593 MCQs</li><li>Full step-by-step solutions + ⚡ short tricks</li><li>PYQ badges, notes + PDF library</li></ul>
+<div class="meta"><span>v1.0</span><span>~48 MB</span></div>
 <a class="dl" href="https://github.com/Ruhvibes/ruhxam/releases/download/v1/RuhXam.apk">⬇ Download APK</a>
 </div>
 
@@ -121,6 +124,13 @@ footer .h{color:#ff5c7a}
 <ul><li>PDF, photo &amp; document tools</li><li>Calculators, QR, utilities</li><li>100% free, no ads spam</li></ul>
 <div class="meta"><span>v1.0</span><span>~8 MB</span></div>
 <a class="dl" href="https://github.com/Ruhvibes/ruhtools/releases/download/v1/RuhTools.apk">⬇ Download APK</a>
+</div>
+
+<div class="app">
+<div class="ic">🏛️</div><h3>BiharDarshan</h3><div class="tag2">bihar tourism guide</div>
+<ul><li>23 famous places of Bihar</li><li>50 real photos + 12 videos</li><li>Cinematic view of every place</li></ul>
+<div class="meta"><span>v1.0</span><span>~29 MB</span></div>
+<a class="dl" href="https://github.com/Ruhvibes/bihardarshan/releases/download/v1/BiharDarshan.apk">⬇ Download APK</a>
 </div>
 
 </div>
@@ -168,7 +178,6 @@ footer .h{color:#ff5c7a}
 </section>
 
 <footer>Made with <span class="h">♥</span> by Hasnain • RUHVIBES © 2026</footer>
-
 </div>
 <b:section class='main-section' id='main' maxwidgets='1' name='Main' showaddelement='no'>
 </b:section>
