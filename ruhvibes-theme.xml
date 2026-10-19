@@ -5,7 +5,7 @@
 <meta charset='UTF-8'/>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
 <title>Ruhvibes - Free Android Apps</title>
-<meta content='Download free Ruhvibes Android apps — RuhRank, RuhMix, RuhStudy, RuhTools, RuhLife, RuhGenesis, RuhXam, BiharDarshan' name='description'/>
+<meta content='Download free Ruhvibes Android apps — RuhRank, RuhMix, Ruh Aura, RuhStudy, RuhTools, RuhLife, RuhGenesis, RuhXam, BiharDarshan' name='description'/>
 <b:include data='blog' name='all-head-content'/>
 <b:skin><![CDATA[
 
@@ -60,8 +60,8 @@ footer .h{color:#ff5c7a}
 ]]></b:skin>
 </head>
 <body>
-<div class="term">
 
+<div class="term">
 
 <div class="topbar">
 <div class="logo">&gt;_ RUH<span>VIBES</span></div>
@@ -73,9 +73,9 @@ footer .h{color:#ff5c7a}
 <h1>My Apps.<br/><span class="g">Download Now.</span></h1>
 <p>Study, music, exam preparation and daily tools — everything completely free. No login, no charges.</p>
 <div class="stats">
-<div class="stat"><b>8</b><span>Apps</span></div>
+<div class="stat"><b>9</b><span>Apps</span></div>
 <div class="stat"><b>100%</b><span>Free</span></div>
-<div class="stat"><b>~129MB</b><span>Total Size</span></div>
+<div class="stat"><b>~283MB</b><span>Total Size</span></div>
 </div>
 </div>
 
@@ -111,6 +111,13 @@ footer .h{color:#ff5c7a}
 
 <div class="grp">🎶 Music &amp; Tools</div>
 <div class="apps">
+
+<div class="app">
+<div class="ic">🧘</div><h3>Ruh Aura</h3><div class="tag2">focus &amp; binaural music</div>
+<ul><li>49 original focus tracks + 13 binaural beats</li><li>17 nature ambience mixer, focus timer</li><li>Study Music style player, 100% free</li></ul>
+<div class="meta"><span>v1.0</span><span>~154 MB</span></div>
+<a class="dl" href="https://github.com/Ruhvibes/ruhfocus/releases/download/v1/RuhAura.apk">⬇ Download APK</a>
+</div>
 
 <div class="app">
 <div class="ic">🎧</div><h3>RuhMix</h3><div class="tag2">music &amp; remix studio</div>
@@ -178,7 +185,9 @@ footer .h{color:#ff5c7a}
 </section>
 
 <footer>Made with <span class="h">♥</span> by Hasnain • RUHVIBES © 2026</footer>
+
 </div>
+
 <b:section class='main-section' id='main' maxwidgets='1' name='Main' showaddelement='no'>
 </b:section>
 </body>
